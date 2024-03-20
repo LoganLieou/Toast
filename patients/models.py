@@ -9,6 +9,7 @@ class Patient(models.Model):
     alt_phone = models.CharField(max_length=200, blank=True)
     medical_plan = models.CharField(max_length=200)
     medical_id = models.CharField(max_length=50)
+    risk_assessment = models.DecimalField(max_digits=4, decimal_places=2, default = 0.0)
     def __str__(self):
         return self.name
 

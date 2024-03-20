@@ -10,3 +10,4 @@ def index(request):
 def detail(request, patient_id):
     patient = get_object_or_404(Patient, pk=patient_id)
     return render(request, 'patients/detail.html', {'patient': patient})
+

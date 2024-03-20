@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
 # data
-df = pd.read_csv("./stroke.csv")
+df = pd.read_csv("./data/stroke.csv")
 
 # drop bugged rows
 df = df.dropna()
